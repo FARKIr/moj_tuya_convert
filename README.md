@@ -1,9 +1,6 @@
 Nový Proxmox tuya-convert Kontajner
 Tento skript vytvorí nový LXC kontajner na Proxmox s najnovším Debianom a nastaví tuya-convert. Pre vytvorenie nového LXC kontajnera spustite nasledujúce príkazy v SSH relácii alebo v konzole z rozhrania Proxmox:
 
-```bash
-bash -c "$(wget -qLO - https://github.com/FARKIr/moj_tuya_convert/raw/main/create_container.sh)"
-
 
 V tomto príkaze sme len nahradili odkaz na skript na vytvorenie kontajnera tvojím vlastným odkazom. Uistite sa, že odkaz ukazuje na správny a aktuálny skript pre vytvorenie LXC kontajnera s tuya-convert.
 
@@ -18,3 +15,8 @@ Aby tento skript správne fungoval, musíte mať najprv nainštalované a správ
 
 Vlastný Firmware
 Pre pridanie vlastného firmvéru (nie dodávaného tuya-convert) sa pripojte k samba share vytvorenej kontajnerom (podrobnosti sú uvedené pri prihlásení) a pridajte binárny súbor do priečinka tuya-convert/files/. Váš binárny súbor bude uvedený v ponuke vlastného firmvéru.
+
+
+ 
+```bash
+bash -c "$(wget -qLO - https://github.com/FARKIr/moj_tuya_convert/raw/main/create_container.sh)"
