@@ -16,6 +16,5 @@ Ak chcete pridať vlastný firmware (nie dodaný tuya-convert), pripojte sa na s
 
 
 ```bash
-bash -c "$(wget -qLO - https://github.com/FARKIr/moj_tuya_convert/raw/master/create_container.sh)"
-
+bash -c "$(wget -qLO - github.com/FARKIr/moj_tuya_convert/blob/main/create_container.sh)"
 
