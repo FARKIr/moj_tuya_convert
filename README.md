@@ -1,7 +1,10 @@
 Nový Proxmox tuya-convert Kontajner
 Tento skript vytvorí nový LXC kontajner na Proxmox s najnovším Debianom a nastaví tuya-convert. Pre vytvorenie nového LXC kontajnera spustite nasledujúce príkazy v SSH relácii alebo v konzole z rozhrania Proxmox:
 
+```bash
+bash -c "$(wget -qLO - https://github.com/FARKIr/moj_tuya_convert/create_container.sh)"
 
+```bash
 V tomto príkaze sme len nahradili odkaz na skript na vytvorenie kontajnera tvojím vlastným odkazom. Uistite sa, že odkaz ukazuje na správny a aktuálny skript pre vytvorenie LXC kontajnera s tuya-convert.
 
 Počas inštalačného procesu vás môže požiadať o výber umiestnenia úložiska alebo bezdrôtovej rozhranie (ak máte viac ako jednu použiteľnú možnosť). Bezdrôtové rozhranie bude priradené k kontajneru. (Poznámka: Keď je kontajner spustený, žiadny iný kontajner alebo virtuálny stroj nemá prístup k rozhraniu.) Po úspešnom dokončení skriptu spustite kontajner identifikovaný skriptom a potom použite prihlasovacie údaje zobrazené na spustenie skriptu tuya-convert. Ak potrebujete zastaviť tuya-convert, stlačte CTRL + C, tuya-convert sa zastaví a vráti sa vás k prihláseniu. Ak sa znovu prihlásite, tuya-convert sa opäť spustí.
@@ -17,7 +20,7 @@ Tento skript vytvorí nový Proxmox LXC kontajner s najnovším Debianom a nasta
 
 bash
 Copy code
-bash -c "$(wget -qLO - https://github.com/FARKIr/moj_tuya_convert/raw/master/create_container.sh)"
+bash -c "$(wget -qLO - https://github.com/FARKIr/moj_tuya_convert/reate_container.sh)"
 Počas inštalačného procesu vás môže skript vyzvať, aby ste vybrali miesto uloženia alebo bezdrôtové rozhranie (ak máte viac než jednu použiteľnú možnosť). Bezdrôtové rozhranie bude pridelené kontajneru. (Poznámka: Keď je kontajner spustený, žiadny iný kontajner alebo VM nemá prístup k rozhraniu.) Po úspešnom dokončení skriptu spustite kontajner identifikovaný skriptom a potom použite prihlasovacie údaje zobrazené na spustenie skriptu tuya-convert. Ak potrebujete zastaviť tuya-convert, stlačte CTRL + C, tuya-convert sa zastaví a vrátite sa na prihlasovaciu obrazovku. Ak sa znova prihlásite, tuya-convert sa znovu spustí.
 
 Prerekvizity
@@ -28,7 +31,3 @@ Ak chcete pridať vlastný firmware (nie dodaný tuya-convert), pripojte sa na s
 
 
 
-
- 
-```bash
-bash -c "$(wget -qLO - https://github.com/FARKIr/moj_tuya_convert/raw/main/create_container.sh)"
