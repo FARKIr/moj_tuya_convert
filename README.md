@@ -13,8 +13,3 @@ Aby tento skript správne fungoval, musíte mať nainštalované a správne nast
 Vlastný firmware
 
 Ak chcete pridať vlastný firmware (nie dodaný tuya-convert), pripojte sa na samba zdieľaný priečinok vytvorený kontajnerom (podrobnosti sú uvedené v prihlasovacom prompte) a pridajte binárny súbor do priečinka tuya-convert/files/. Váš binárny súbor bude uvedený v ponuke vlastného firmvéru.
-
-bash -c "$(wget -qLO - https://github.com/whiskerz007/proxmox_tuya-convert_container/raw/master/create_container.sh)"
-
-```bash
-bash -c "$(wget -qLO - https://github.com/FARKIr/moj_tuya_convert/raw/mmain/create_container.sh)"
